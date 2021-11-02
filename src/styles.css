@@ -317,6 +317,9 @@
     margin: 20px 5px 10px 5px;
     width: 15px;
   }
+  .dark-dot {
+    background-color: #aca698;
+  }
   .home-here {
     color: #10598f;
     font-family: "Permanent Marker", cursive;

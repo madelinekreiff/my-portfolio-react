@@ -22,7 +22,8 @@ let i = 0;
 
 class Home extends Component {
   state = {
-    image: { src: "", alt: "" }
+    image: { src: "", alt: "" },
+    darkDot: ["dot dark-dot", "dot", "dot", "dot", "dot", "dot"]
   }; // end state
 
   // show slides
@@ -37,10 +38,24 @@ class Home extends Component {
     });
   }; // end showSlide
 
+  changeDots = () => {
+    const newDarkDot = ["dot", "dot", "dot", "dot", "dot", "dot"];
+    this.state.darkDot.map((dotClass, index) => {
+      if (dotClass === "dot dark-dot") {
+        if (index === 5) newDarkDot[0] = "dot dark-dot";
+        else newDarkDot[index+1] = "dot dark-dot";
+      }
+    })
+    this.setState({ darkDot: newDarkDot });
+  }; // end changeDots
+
   // restart interval when component is mounted to automatically show slides
   componentDidMount() {
     this.showSlide();
-    this.timerID = setInterval(() => this.showSlide(), 2000);
+    this.timerID = setInterval(() => {
+      this.showSlide();
+      this.changeDots();
+      }, 2000);
   } // end componentDidMount
 
   // stop interval when component is unmounted
@@ -79,12 +94,12 @@ class Home extends Component {
               </div>{" "}
               {/* -- end slideshow -- */}
               <div className="dots-div">
-                <span className="dot"></span>
-                <span className="dot"></span>
-                <span className="dot"></span>
-                <span className="dot"></span>
-                <span className="dot"></span>
-                <span className="dot"></span>
+                <span className={this.state.darkDot[0]}></span>
+                <span className={this.state.darkDot[1]}></span>
+                <span className={this.state.darkDot[2]}></span>
+                <span className={this.state.darkDot[3]}></span>
+                <span className={this.state.darkDot[4]}></span>
+                <span className={this.state.darkDot[5]}></span>
               </div>{" "}
               {/* -- end dots-div -- */}
               <p className="home-here-caption">
