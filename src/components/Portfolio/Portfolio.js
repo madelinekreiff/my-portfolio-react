@@ -12,6 +12,7 @@ class Portfolio extends Component {
 
   // fetch API call to get project data when component is mounted
   async componentDidMount() {
+    document.title = "Madeline Reiff | Portfolio";
     const res = await fetch(
       "https://madelinekreiff.github.io/my-portfolio/portfolio.json"
     );

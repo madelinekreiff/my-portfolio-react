@@ -14,6 +14,7 @@ class Projects extends Component {
   onClick = () => {}; // end onClick
 
   componentDidMount() {
+    document.title = "Madeline Reiff | Projects";
     const savedString = localStorage.getItem("stringToSave");
     if (savedString) {
       const savedState = JSON.parse(savedString);

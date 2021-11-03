@@ -17,13 +17,13 @@ class About extends Component {
   }; // end state
 
   async componentDidMount() {
+    document.title = "Madeline Reiff | About";
     const res = await fetch(
       "https://madelinekreiff.github.io/my-portfolio/portfolio.json"
     );
     let data = await res.json();
     data = data.about;
     this.setState({ aboutParas: data });
-    // changeText(data, div, id);
   } // end componentDidMount
 
   toggleClasses = (div, parentDiv) => {
