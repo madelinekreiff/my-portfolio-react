@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import { FaRegSmile } from "react-icons/fa";
 import beachChairs from "../../img/beach-chairs.png";
 import jubileeAusten from "../../img/html-css/jubilee-austen.png";
@@ -104,9 +105,9 @@ class Home extends Component {
               {/* -- end dots-div -- */}
               <p className="home-here-caption">
                 Click{" "}
-                <a className="home-here" href="portfolio">
+                <Link to="/portfolio" className="home-here">
                   here
-                </a>{" "}
+                </Link>{" "}
                 to view my entire portfolio gallery
               </p>
               <div className="slideshow-divider"></div>
