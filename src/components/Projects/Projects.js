@@ -11,8 +11,6 @@ class Projects extends Component {
     image: ""
   }; // end state
 
-  onClick = () => {}; // end onClick
-
   componentDidMount() {
     document.title = "Madeline Reiff | Projects";
     const savedString = localStorage.getItem("stringToSave");
