@@ -1,0 +1,110 @@
+/* ---------- Mobile Styles ---------- */
+.smiley-face {
+  color: #34677a;
+  display: inline-block;
+  font-size: 0.8em;
+  padding: 0 0 0 10px;
+}
+.catch-statement,
+.bonus-statement {
+  max-width: 475px;
+}
+.bonus-statement {
+  margin: 36px 0 0 0;
+}
+.bonus {
+  font-family: "Permanent Marker", cursive;
+  font-size: 1.125em;
+}
+.github {
+  color: #10598f;
+  font-family: "Permanent Marker", cursive;
+  text-decoration: none;
+}
+.github:hover {
+  cursor: pointer;
+  font-size: 1.125em;
+  transition: 0.05s;
+}
+
+/* ----- Slideshow ----- */
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.slideshow-divider {
+  border: 1px solid #34677a;
+  margin: 40px 0;
+  width: 100%;
+}
+.home-portfolio-heading {
+  margin: 36px 0;
+}
+.home-portfolio-heading,
+.home-here-caption {
+  text-align: center;
+}
+.slideshow {
+  position: relative;
+}
+.slide {
+  box-sizing: border-box;
+}
+.fade {
+  animation: fade 2s infinite;
+  -webkit-animation: fade 2s infinite;
+}
+.dots-div {
+  text-align: center;
+}
+.dot {
+  background-color: #bab4a4;
+  border: 1px solid #aca698;
+  border-radius: 50%;
+  display: inline-block;
+  height: 15px;
+  margin: 20px 5px 10px 5px;
+  width: 15px;
+}
+.dark-dot {
+  background-color: #aca698;
+}
+.home-here {
+  color: #10598f;
+  font-family: "Permanent Marker", cursive;
+  font-size: 1.125em;
+  text-decoration: none;
+}
+.home-here:hover {
+  font-size: 1.25em;
+  cursor: pointer;
+  transition: 0.05s;
+}
+
+/* ---------- Tablet Styles ---------- */
+@media only screen and (min-width: 768px) {
+  .catch-statement,
+  .bonus-statement {
+    max-width: none;
+  }
+}
+
+/* ---------- Desktop Styles ---------- */
+@media only screen and (min-width: 1200px) {
+  .home-figure,
+  .slideshow-div {
+    width: 90%;
+  }
+}

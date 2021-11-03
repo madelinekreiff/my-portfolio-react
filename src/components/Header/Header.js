@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import sky from "../img/sky.jpg";
-import logo from "../img/logo.png";
-import "../styles.css";
+import sky from "../../img/sky.jpg";
+import logo from "../../img/logo.png";
+import "./Header.css";
 
 const Header = () => (
   <div>

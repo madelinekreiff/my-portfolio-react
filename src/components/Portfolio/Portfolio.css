@@ -1,0 +1,68 @@
+/* ---------- Mobile Styles ---------- */
+.project-items {
+  align-items: center;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+}
+.project-article {
+  align-items: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+.project-heading {
+  color: #10598f;
+  font-size: 1.75em;
+  line-height: 2.18em;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.project-images {
+  align-items: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+.project-images figure {
+  margin-bottom: 50px;
+  overflow: hidden;
+  position: relative;
+}
+.hover {
+  color: #fff;
+  font-size: 1.5em;
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  padding-top: 26%;
+  position: absolute;
+  text-align: center;
+  text-decoration: none;
+  top: 0;
+  width: 100%;
+}
+.hover:hover {
+  background-color: #3f3e3a;
+  cursor: pointer;
+  opacity: 0.9;
+  transition: background-color 0.5s;
+}
+
+/* ---------- Tablet Styles ---------- */
+@media only screen and (min-width: 768px) {
+  .project-article {
+    margin-bottom: 40px;
+  }
+  .project-images figure {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    width: 45%;
+  }
+  .project-heading {
+    font-size: 2em;
+    line-height: 1.94em;
+  }
+}

@@ -7,8 +7,8 @@ import {
   FaBullhorn,
   FaLightbulb
 } from "react-icons/fa";
-import headshot from "../img/headshot.jpg";
-import "../styles.css";
+import headshot from "../../img/headshot.jpg";
+import "./About.css";
 
 class About extends Component {
   state = {

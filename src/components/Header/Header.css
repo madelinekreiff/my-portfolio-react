@@ -1,0 +1,94 @@
+/* ---------- Mobile Styles ---------- */
+header {
+  align-items: center;
+  color: #10598f;
+  display: flex;
+  font-family: "PT Sans", sans-serif;
+  justify-content: center;
+  padding: 15px 0;
+}
+.logo {
+  border: none;
+  height: 40px;
+  justify-content: flex-start;
+  padding-right: 20px;
+  width: 40px;
+}
+header h4 {
+  padding-right: 60px;
+}
+.header-divider {
+  border: 1px solid #34677a;
+  margin: 15px 0;
+  width: 100%;
+}
+nav {
+  align-items: center;
+  animation: 1.5s ease-out fadeIn;
+  display: flex;
+  justify-content: center;
+}
+nav ul {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 100%;
+}
+.nav-link {
+  color: #10598f;
+  font-size: 1.125em;
+  padding: 10px 0;
+  text-decoration: none;
+}
+
+/* ---------- XS Screen Styles ---------- */
+@media only screen and (max-width: 300px) {
+  header h4 {
+    font-size: 1.125em;
+    width: 10%;
+  }
+  .logo {
+    height: 25px;
+    width: 25px;
+  }
+}
+
+/* ---------- Tablet Styles ---------- */
+@media only screen and (min-width: 768px) {
+  header h4 {
+    padding-right: 70px;
+  }
+  .logo {
+    height: 50px;
+    width: 50px;
+  }
+  .nav-link {
+    font-size: 1.375em;
+  }
+}
+
+/* ---------- Desktop Styles ---------- */
+@media only screen and (min-width: 1200px) {
+  header .content-wrapper {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+  .header-divider {
+    border: none;
+    margin: 0;
+    width: 0;
+  }
+  nav {
+    justify-content: flex-end;
+    width: 68%;
+  }
+  nav ul {
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+  }
+  .nav-link {
+    font-size: 1.25em;
+    padding-left: 20px;
+  }
+}

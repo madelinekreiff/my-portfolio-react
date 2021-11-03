@@ -1,0 +1,21 @@
+/* ---------- Mobile Styles ---------- */
+footer {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+}
+.copyright {
+  color: #10598f;
+  font-size: 1em;
+  min-width: 260px;
+  text-align: center;
+}
+
+/* ---------- XS Screen Styles ---------- */
+@media only screen and (max-width: 300px) {
+  .copyright {
+    font-size: 0.875em;
+    min-width: 0;
+  }
+}

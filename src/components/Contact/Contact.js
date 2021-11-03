@@ -1,9 +1,9 @@
 import React from "react";
 import { FaLinkedinIn, FaGithub } from "react-icons/fa";
-import sunglasses from "../img/contact/sunglasses.jpg";
-import hammock from "../img/contact/hammock.jpg";
-import flower from "../img/contact/flower.jpg";
-import "../styles.css";
+import sunglasses from "../../img/contact/sunglasses.jpg";
+import hammock from "../../img/contact/hammock.jpg";
+import flower from "../../img/contact/flower.jpg";
+import "./Contact.css";
 
 const Contact = () => (
   <div>

@@ -1,0 +1,79 @@
+/* ---------- Mobile Styles ---------- */
+.contact-items {
+  align-items: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+.contact-sq {
+  align-items: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  width: 100%;
+}
+.contact figure {
+  width: 80%;
+}
+.contact-txt {
+  margin: 40px 0;
+  width: 100%;
+}
+.contact-txt p,
+.contact-address {
+  text-align: center;
+}
+.contact-heading {
+  color: #10598f;
+  font-size: 1.25em;
+  margin-bottom: 30px;
+}
+.contact-address a {
+  color: #34677a;
+  line-height: 1.75em;
+}
+.social-icons {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.fontawesome-icon {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding: 0 20px;
+}
+.fa-icon {
+  color: #34677a;
+  font-size: 1.75em;
+}
+
+/* ---------- Tablet Styles ---------- */
+@media only screen and (min-width: 768px) {
+  .contact-sq {
+    flex-flow: row nowrap;
+    margin: 40px 0 50px 0;
+  }
+  .contact-sq figure {
+    width: 50%;
+  }
+  .contact-heading {
+    font-size: 1.375em;
+  }
+  .contact-txt {
+    width: 50%;
+  }
+  .contact-img {
+    margin-right: 40px;
+  }
+  .contact-img-switch {
+    margin-left: 40px;
+    order: 2;
+  }
+  .contact-txt-switch {
+    order: 1;
+  }
+  .fa-icon {
+    font-size: 1.875em;
+  }
+}

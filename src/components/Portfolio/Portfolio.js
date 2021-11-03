@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Project from "./Project";
-import { htmlCss, javascript, react } from "../images";
-import "../../styles.css";
+import { htmlCss, javascript, react } from "../projectImages";
+import "./Portfolio.css";
 
 class Portfolio extends Component {
   state = {

@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import { htmlCss, javascript, react } from "./images";
-import "../styles.css";
+import { htmlCss, javascript, react } from "../projectImages";
+import "./Projects.css";
 
 const imagesArray = [htmlCss, javascript, react];
 

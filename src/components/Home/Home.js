@@ -1,13 +1,13 @@
 import React, { Component } from "react";
 import { FaRegSmile } from "react-icons/fa";
-import beachChairs from "../img/beach-chairs.png";
-import jubileeAusten from "../img/html-css/jubilee-austen.png";
-import unpluggedRetreat from "../img/html-css/unplugged-retreat.png";
-import roguePickings from "../img/html-css/rogue-pickings.png";
-import electionMap from "../img/javascript/election-map.png";
-import guessTheWord from "../img/javascript/guess-the-word.png";
-import stickyNotes from "../img/react/sticky-notes.png";
-import "../styles.css";
+import beachChairs from "../../img/beach-chairs.png";
+import jubileeAusten from "../../img/html-css/jubilee-austen.png";
+import unpluggedRetreat from "../../img/html-css/unplugged-retreat.png";
+import roguePickings from "../../img/html-css/rogue-pickings.png";
+import electionMap from "../../img/javascript/election-map.png";
+import guessTheWord from "../../img/javascript/guess-the-word.png";
+import stickyNotes from "../../img/react/sticky-notes.png";
+import "./Home.css";
 
 // slideshow images
 const images = [
@@ -40,7 +40,7 @@ class Home extends Component {
 
   changeDots = () => {
     const newDarkDot = ["dot", "dot", "dot", "dot", "dot", "dot"];
-    this.state.darkDot.map((dotClass, index) => {
+    this.state.darkDot.forEach((dotClass, index) => {
       if (dotClass === "dot dark-dot") {
         if (index === 5) newDarkDot[0] = "dot dark-dot";
         else newDarkDot[index+1] = "dot dark-dot";
@@ -114,16 +114,17 @@ class Home extends Component {
             {/* -- end slideshow-div -- */}
             <h2 className="bonus-statement">
               <span className="bonus">Bonus: </span>I designed and developed
-              this entire website that you're currently on! All of my work is on{" "}
+              this entire website that you're currently on! I used the React library 
+              to render components, which you can check out on{" "}
               <a
                 className="github"
-                href="https://github.com/madelinekreiff/my-portfolio"
+                href="https://github.com/madelinekreiff/my-portfolio-react"
                 target="_blank"
                 rel="noreferrer noopener"
               >
                 GitHub
               </a>{" "}
-              if you're interested in checking it out.
+              if you're interested.
             </h2>
           </div>
           {/* -- end content-wrapper -- */}

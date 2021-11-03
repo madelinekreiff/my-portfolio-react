@@ -1,0 +1,140 @@
+/* ---------- Mobile Styles ---------- */
+.hide {
+  display: none;
+}
+.title {
+  text-align: center;
+}
+.project,
+.project-div,
+.info-div,
+.info .buttons-div,
+.button-div {
+  align-items: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+.project-div,
+.info-div,
+.buttons-div,
+.button-div {
+  width: 100%;
+}
+.info {
+  line-height: 2em;
+}
+.list {
+  align-items: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  padding: 30px 0;
+}
+.list-item {
+  padding: 20px 0;
+  width: 100%;
+}
+.heading {
+  color: #10598f;
+  font-family: "Permanent Marker", cursive;
+  font-size: 1.125em;
+  margin-right: 5px;
+}
+.code {
+  align-items: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin-bottom: 50px;
+  width: 100%;
+}
+.here {
+  color: #10598f;
+  font-family: "Permanent Marker", cursive;
+  font-size: 1.125em;
+  padding: 0 4px 2px 4px;
+  text-decoration: none;
+}
+.here:hover {
+  font-size: 1.25em;
+  cursor: pointer;
+  transition: 0.05s;
+}
+.code,
+.website-button,
+.website-button-link,
+.back-button {
+  align-items: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+.website-button,
+.back-button {
+  background-image: linear-gradient(to right, #bbb8b0, #b8af98);
+  border: 2px solid #10598f;
+  border-radius: 40px;
+  color: #10598f;
+  font-family: "Permanent Marker", cursive;
+  padding: 0;
+}
+.website-button-link {
+  text-decoration: none;
+  width: 100%;
+}
+.website-button {
+  font-size: 1.125em;
+  height: 80px;
+  width: 350px;
+}
+.back-button {
+  height: 40px;
+  margin-top: 30px;
+  width: 100px;
+}
+.back-button-link {
+  color: #10598f;
+  text-decoration: none;
+}
+.website-button:hover,
+.back-button:hover {
+  cursor: pointer;
+  transform: scale(1.05) perspective(1px);
+  transition: 0.05s;
+}
+
+/* ---------- Tablet Styles ---------- */
+@media only screen and (min-width: 768px) {
+  .list-item,
+  .back-button {
+    font-size: 1.125em;
+  }
+  .heading,
+  .here,
+  .website-button {
+    font-size: 1.25em;
+  }
+  .here {
+    padding: 0 6px 4px 6px;
+  }
+  .here:hover {
+    font-size: 1.375em;
+    cursor: pointer;
+    transition: 0.05s;
+  }
+}
+
+/* ---------- Desktop Styles ---------- */
+@media only screen and (min-width: 1200px) {
+  .info-div {
+    flex-flow: nowrap;
+    justify-content: space-around;
+  }
+  .photo {
+    width: 50%;
+  }
+  .info {
+    width: 40%;
+  }
+}
