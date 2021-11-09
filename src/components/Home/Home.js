@@ -80,7 +80,7 @@ class Home extends Component {
               <img src={beachChairs} alt="Beach Chairs" />
             </figure>
             <h2 className="catch-statement">
-              I'm a front-end web developer excited to bring your vision to life
+              I'm a web and software developer excited to bring your vision to life
               on the World Wide Web!
             </h2>
             {/* -- Slideshow -- */}
