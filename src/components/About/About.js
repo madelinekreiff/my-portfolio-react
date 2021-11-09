@@ -17,6 +17,7 @@ class About extends Component {
   }; // end state
 
   async componentDidMount() {
+    window.scrollTo(0, 0);
     document.title = "Madeline Reiff | About";
     const res = await fetch(
       "https://madelinekreiff.github.io/my-portfolio/portfolio.json"

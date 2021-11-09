@@ -52,6 +52,7 @@ class Home extends Component {
 
   // restart interval when component is mounted to automatically show slides
   componentDidMount() {
+    window.scrollTo(0, 0);
     document.title = "Madeline Reiff | Home";
     this.showSlide();
     this.timerID = setInterval(() => {

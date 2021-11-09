@@ -12,6 +12,7 @@ class Projects extends Component {
   }; // end state
 
   componentDidMount() {
+    window.scrollTo(0, 0);
     document.title = "Madeline Reiff | Projects";
     const savedString = localStorage.getItem("stringToSave");
     if (savedString) {
@@ -85,11 +86,9 @@ class Projects extends Component {
                   </a>
                 </div>
                 <div className="button-div">
-                  <button className="back-button">
-                    <Link to="/portfolio" className="back-button-link">
-                      Back
-                    </Link>
-                  </button>
+                  <Link to="/portfolio" className="back-button-link">
+                    <button className="back-button">Back</button>
+                  </Link>
                 </div>
               </div>
             </div>
